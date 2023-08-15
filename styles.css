@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 100px;
+    background-color: #fcff29; /* Amarelo claro */
+  }
+  
+  #message {
+    display: none;
+    font-size: 24px;
+    color: black;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #button-yes, #button-no {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black; /* Botões em preto */
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.5s;
+  }
+  
+  #button-no {
+    transition: transform 0.3s ease-in-out, background-color 0.5s, color 0.5s;
+  }
+  

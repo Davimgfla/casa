@@ -1,0 +1,46 @@
+.confetti {
+    width: 15px;
+    height: 15px;
+    background-color: #fcff29;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top left;
+    animation: confetti-fall 4s ease-out infinite, confetti-rotate 4s linear infinite;
+  }
+  
+  .confetti1 {
+    background-color: #fcff29;
+    animation-delay: 0.5s;
+  }
+  
+  .confetti2 {
+    background-color: #fcff29;
+    animation-delay: 1s;
+  }
+  
+  .confetti3 {
+    background-color: #fcff29;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes confetti-fall {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) rotate(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(200px, 100vh) rotate(1440deg);
+    }
+  }
+  
+  @keyframes confetti-rotate {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+  
